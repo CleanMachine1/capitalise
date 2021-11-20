@@ -1,6 +1,6 @@
-Since `strings` doesn't have this functionality, I guess I just have to make it
+This is a fork of https://github.com/tommysolsen/capitalise 
 
-# Usage
+## Usage
 
 ```go
 fmt.Println(capitalise.First("test"))
