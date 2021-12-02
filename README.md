@@ -1,4 +1,3 @@
-This is a fork of https://github.com/tommysolsen/capitalise
 
 The current 2 commands available for use are:
 
