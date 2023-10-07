@@ -4,15 +4,7 @@ import (
 	"unicode"
 )
 
-// Capitalises the first character of a string
-func First(str string) string {
-	if len(str) == 0 {
-		return ""
-	}
-	tmp := []rune(str)
-	tmp[0] = unicode.ToUpper(tmp[0])
-	return string(tmp)
-}
+// Capitalises specified character in string
 func Specified(str string, num int) string {
 	if len(str) == 0 {
 		return ""
@@ -23,4 +15,9 @@ func Specified(str string, num int) string {
 	tmp := []rune(str)
 	tmp[num] = unicode.ToUpper(tmp[num])
 	return string(tmp)
+}
+
+// Capitalises the first character of a string
+func First(str string) string {
+	return Specified(str, 0)
 }
